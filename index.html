@@ -124,6 +124,10 @@
         <span class="label">البيع</span>
         <h2>الوصل يفتح فوق الشاشة، لا بدلاً منها.</h2>
         <p class="say">تضيف المواد، فيطفو الوصل على الشاشة وتضبّب ما خلفه — لا شيء يشدّ العين غير ما بيدك الآن. تختار نقداً أو آجلاً، تكتب الخصم، وتحفظ وتطبع. وإن كان آجلاً، سُجّل الدَين على اسمه في نفس اللحظة.</p>
+        <!-- Bayan: R-SALE-09, enforced and pinned by CreditLimitBlocksDeferredSaleTests. This is
+             a tier-3 consequence of a real enforced rule — no number attached to it, and it
+             collapses cleanly back into the mechanism if a merchant asks how we know. -->
+        <p class="say">وإن تجاوز دَينه السقف الذي حدّدته له، يرفض البرنامج البيعة الآجلة وقتها — لا أن تكتشف بعد أسبوع أن الحساب مشى أبعد ممّا اتفقتما عليه.</p>
       </div>
       <div class="art">
         <div class="tilt">
@@ -261,7 +265,11 @@
       <div>
         <span class="label">النواقص</span>
         <h2>ينبّهك قبل أن ينفد، على أساس ما يبيعه محلّك فعلاً.</h2>
-        <p class="say">الحدّ ليس رقماً تكتبه لكل صنف ثم تنساه: يُقاس على سرعة بيع الصنف نفسه. الذي يدور كل أسبوع ينبّهك مبكراً، والذي يجلس شهراً لا يزعجك.</p>
+        <!-- Bayan, from stLowStockItem: T = p·Par where demand exists, else the merchant's own
+             typed minimum M; Par itself accounts for lead time and demand variability. The first
+             draft said only "measured on how fast it sells" — true but vaguer than the mechanism,
+             and the mechanism is the part that survives "how do you know?". -->
+        <p class="say">الحدّ ليس رقماً تكتبه لكل صنف ثم تنساه: يُحسب من سرعة بيع الصنف نفسه ومن مدّة وصول طلبيتك. الذي يدور كل أسبوع ينبّهك مبكراً، والذي يجلس شهراً لا يزعجك — وما لا بيع له يرجع إلى الحدّ الذي كتبتَه أنت.</p>
       </div>
       <div class="art">
         <div class="tilt">
@@ -296,7 +304,12 @@
       <div>
         <span class="label">التقارير</span>
         <h2>أرقام المحل كلها في مكان واحد.</h2>
-        <p class="say">ما بِعتَه، وما رجع، والربح بعد الخصم، ومن عليه دَين ومنذ متى — كلها من نفس البيانات التي سجّلها الكاشير، بلا إدخال ثانٍ ولا ملف إكسل جانبي.</p>
+        <!-- Bayan: "الربح بعد الخصم" was cut, not softened. Reports has no profit query and no
+             cost price in its Application layer at all — the same wall Basir stopped at rather
+             than inventing a number. Replaced with the eight queries that DO exist:
+             SalesSummary, Returns, TopSelling, DeadStock, StockValue, Debtors, CustomerStatement.
+             Dead stock is the strongest of them and nobody had marketed it yet. -->
+        <p class="say">ما بِعتَه، وما رجع، وأكثر ما يُطلب، وبضاعة نائمة على الرف من شهور بلا حركة، ومن عليه دَين ومنذ متى — كلها من نفس البيانات التي سجّلها الكاشير، بلا إدخال ثانٍ ولا ملف إكسل جانبي.</p>
       </div>
       <div class="art">
         <div class="tilt">
