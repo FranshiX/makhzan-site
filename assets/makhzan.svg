@@ -1,0 +1,31 @@
+<!-- Makhzan app icon — master drawing (used for the 256/128/64/48/32 slots of Makhzan.ico).
+     Meem: a ring head with a descender tail off its lower-left.
+
+     Known and accepted: this is the topology of a Latin "p" (bowl right, stem left) and reads as
+     one at small sizes. A Kufi variant with a horizontal baseline foot was built and shown as the
+     alternative; Flemer chose this drawing in full knowledge of that — "حتى لو كان p او ما شابه".
+     Do not "fix" it back to the Kufi form without asking him: the objection is already on record
+     and already answered.
+
+     Colors are DESIGN_SYSTEM.md tokens, inverted from the app's usual pairing: AmberBrush as the
+     tile, NavyDeepBrush as the mark. A navy tile disappears against Windows 11's dark taskbar
+     (~#1f2226); an amber tile does not.
+
+     This file is the source of truth. Regenerate Makhzan.ico from it rather than editing the
+     .ico binary.
+
+     WHEN REGENERATING, THE FRAME FORMAT IS NOT A FREE CHOICE — 2026-08-12, learned the hard way:
+     every frame BELOW 256 must be a BMP/DIB (32bpp BGRA bottom-up + a 1bpp AND mask derived from
+     alpha), and only 256 may be a PNG. The first .ico shipped PNG at all seven sizes; it embedded
+     in the .exe correctly and Windows still drew its own default icon, because GDI's icon loader
+     (CreateIconFromResourceEx — the shell, the taskbar and WPF's Window.Icon fallback all sit on
+     it) cannot decode PNG frames at small sizes, and it fails the WHOLE icon rather than skipping
+     to a frame it can read. A PNG-only .ico therefore looks perfectly fine in a hex dump, in the
+     build log, and in the .exe's resource table, and is invisible everywhere a user looks.
+     `new System.Drawing.Icon(path, 16, 16).ToBitmap()` is the cheap check: it throws on a
+     PNG-only .ico and returns pixels on a correct one. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256">
+  <rect x="8" y="8" width="240" height="240" rx="54" fill="#f59e0b"/>
+  <path d="M 160 38 a 54 54 0 1 1 -0.1 0 z M 160 68 a 24 24 0 1 0 0.1 0 z" fill="#0f1e2e"/>
+  <path d="M 128 132 Q 116 170 104 198" fill="none" stroke="#0f1e2e" stroke-width="34" stroke-linecap="round"/>
+</svg>

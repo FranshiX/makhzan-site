@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>مخزن — برنامج المحل</title>
+  <meta name="description" content="مخزن: برنامج للمحل — بيع، وديون، ومخزون، وكشف حساب مطبوع تسلّمه للعميل.">
+  <link rel="icon" href="assets/makhzan-mark.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="bar">
+    <div class="brand">
+      <svg viewBox="87 38 127 177" aria-hidden="true">
+        <path d="M 160 38 a 54 54 0 1 1 -0.1 0 z M 160 68 a 24 24 0 1 0 0.1 0 z" fill="#0f1e2e"/>
+        <path d="M 128 132 Q 116 170 104 198" fill="none" stroke="#f59e0b" stroke-width="34" stroke-linecap="round"/>
+      </svg>
+      مخزن
+    </div>
+    <!-- PENDING: Telegram handle. Add href="https://t.me/…" and drop aria-disabled. -->
+    <a class="cta" href="#تواصل" aria-disabled="true">راسلني على تلغرام</a>
+  </div>
+</header>
+
+<!-- ══ HERO — the notebook, and the same thing adding itself up ══ -->
+<section class="paper hero">
+  <div class="wrap">
+    <span class="eyebrow">دفتر المحل</span>
+    <h1>كل شيء كان في الدفتر.<br>الآن <em>يجمع نفسه</em>.</h1>
+    <p class="lede">
+      مخزن برنامج للمحل: بيع، وديون، ومخزون، وورقة تطبعها وتسلّمها للعميل.
+      يشتغل على حاسبة محلّك، ولا يتوقّف إذا انقطع الإنترنت.
+    </p>
+
+    <div class="pair">
+      <div class="note rise">
+        <div class="head">قبل</div>
+        <ul>
+          <li><span>أبو أحمد</span><span class="amt">٤٥٬٠٠٠</span></li>
+          <li><span>حيدر — صبغ</span><span class="amt">١٢٠٬٠٠٠</span></li>
+          <li class="struck"><span>أم مريم</span><span class="amt">٣٠٬٠٠٠</span></li>
+          <li><span>محمود؟</span><span class="amt">؟</span></li>
+        </ul>
+        <div class="foot">الصفحة الأخيرة ممزّقة، والمجموع بالذاكرة.</div>
+      </div>
+
+      <div class="tilt rise">
+        <div class="win">
+          <div class="win-top">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+            <span class="who"><span>أبو علي — الكاشير</span><span class="av"></span></span>
+          </div>
+          <div class="win-body">
+            <div class="rail"><b class="on">بيع</b><b>مخزن</b><b>ديون</b><b>راجع</b><b>تقارير</b></div>
+            <div class="canvas">
+              <div class="card">
+                <div class="rows">
+                  <div class="row hot"><span>صبغ أبيض ٢٠ لتر</span><span class="q fig">×2</span><span class="fig">90,000</span></div>
+                  <div class="row"><span>مسامير ٣ إنش</span><span class="q fig">×5</span><span class="fig">17,500</span></div>
+                  <div class="row"><span>سيليكون شفاف</span><span class="q fig">×3</span><span class="fig">10,500</span></div>
+                </div>
+              </div>
+              <div class="card">
+                <div class="paybar">
+                  <span class="flat">🗎 المسودات</span>
+                  <span class="flat">🖨 إعادة الطباعة</span>
+                  <span class="tot"><span>الإجمالي</span><b class="fig" data-count="118000">0</b></span>
+                  <span class="sell">🛒 بيع <span class="pill fig">3</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PHILOSOPHY ══ -->
+<section class="paper">
+  <div class="narrow">
+    <span class="eyebrow">لماذا بُني هكذا</span>
+    <h2 style="font-size:clamp(1.5rem,3vw,2.15rem)">أربعة قرارات لا تُساوَم عليها.</h2>
+
+    <div class="entries">
+      <!-- PENDING (Flemer's call, not a design one): the two entries below describe cloud
+           upload / off-site backup, which is NOT BUILT YET — CODEX/13_LAUNCH_READINESS
+           records it as the largest unscoped gap. Either confirm they are a deliberate
+           launch promise and keep the present tense, reword them as forthcoming, or pull
+           them until the sync ships. Do not publish the site before this is decided. -->
+      <div class="entry rise">
+        <h3>الانقطاع لا يوقف البيع</h3>
+        <p>البرنامج يشتغل على حاسبة المحل نفسها، فلا ينتظر شبكة ليفتح وصلاً. وعند عودة الخط تُرفع حساباتك ونسختك خارج المحل بلا تدخّل منك.</p>
+      </div>
+      <div class="entry rise">
+        <h3>نسخة خارج المحل</h3>
+        <p>الحاسبة تُسرق، ويحترق المحل، ويصاب القرص بعطل. ما لا يُفقد هو ما يوجد في مكانين — دفترك يبقى قائماً ولو لم يبقَ الجهاز.</p>
+      </div>
+      <div class="entry rise">
+        <h3>التاريخ لا يُمسح</h3>
+        <p>الدفعة الخاطئة تُصحَّح بقيدٍ مقابل يظهر في الكشف، لا بحذفٍ يخفي ما حصل. من بيده وصل يجد وصله في الورقة دائماً، وهذا ما يجعل الورقة تُصدَّق.</p>
+      </div>
+      <div class="entry rise">
+        <h3>عربي من الأساس</h3>
+        <p>ليس ترجمةً لواجهة إنكليزية: الشاشة تُقرأ من اليمين، والورق المطبوع كذلك، والأرقام تُصطفّ عمودياً لتُجمع بالعين.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SCREEN: SALES + TURBO ══ -->
+<section class="screen">
+  <div class="wrap">
+
+    <div class="moment rise">
+      <div>
+        <span class="label">البيع</span>
+        <h2>الوصل يفتح فوق الشاشة، لا بدلاً منها.</h2>
+        <p class="say">تضيف المواد، فيطفو الوصل على الشاشة وتضبّب ما خلفه — لا شيء يشدّ العين غير ما بيدك الآن. تختار نقداً أو آجلاً، تكتب الخصم، وتحفظ وتطبع. وإن كان آجلاً، سُجّل الدَين على اسمه في نفس اللحظة.</p>
+      </div>
+      <div class="art">
+        <div class="tilt">
+          <div class="win">
+            <div class="win-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="who"><span>أبو علي — الكاشير</span><span class="av"></span></span></div>
+            <div class="win-body">
+              <div class="rail"><b class="on">بيع</b><b>مخزن</b><b>ديون</b><b>راجع</b><b>تقارير</b></div>
+              <!-- PENDING: drawer enters from the right here. InvoiceDrawerControl.xaml says
+                   HorizontalAlignment="Right" with CornerRadius="16,0,0,16", but RTL mirroring
+                   makes either side readable from the markup alone. Confirm against the running
+                   app and flip inset-inline-end/start + the radius if it is the other way. -->
+              <div class="canvas stage">
+                <div class="card">
+                  <div class="rows">
+                    <div class="row"><span>صبغ أبيض ٢٠ لتر</span><span class="q fig">×2</span><span class="fig">90,000</span></div>
+                    <div class="row"><span>مسامير ٣ إنش</span><span class="q fig">×5</span><span class="fig">17,500</span></div>
+                    <div class="row"><span>سيليكون شفاف</span><span class="q fig">×3</span><span class="fig">10,500</span></div>
+                  </div>
+                </div>
+                <div class="veil"></div>
+                <div class="drawer">
+                  <div class="hd"><i></i> الوصل</div>
+                  <div class="seg"><span>نقدي</span><span class="on">آجل</span></div>
+                  <div class="sum">
+                    <div><span>المجموع الفرعي</span><span class="fig">118,000</span></div>
+                    <div><span>الخصم</span><span class="fig" style="color:var(--danger)">-8,000</span></div>
+                    <div class="grand"><span>الصافي</span><b class="fig">110,000</b></div>
+                  </div>
+                  <div class="foot">
+                    <span class="btn dngr">مسح</span>
+                    <span class="btn">مسودة</span>
+                    <span class="btn go">حفظ وطباعة</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="moment flip rise">
+      <div>
+        <span class="label">الإدخال</span>
+        <h2>صوّر فاتورة المورّد، وراجعها بطاقةً بطاقة.</h2>
+        <p class="say">الأسماء تُقرأ من الصورة، والأرقام تكتبها أنت — لأن الرقم الخاطئ في المخزن أسوأ من الرقم المتأخر. بطاقة واحدة أمامك في كل مرة، وشريط أسفلها يقول ما خلص وما بقي، وتقدر ترجع لأي صنف راجعتَه.</p>
+      </div>
+      <div class="art">
+        <div class="tilt">
+          <div class="win">
+            <div class="win-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="who"><span>الإدخال السريع</span><span class="av"></span></span></div>
+            <div class="win-body">
+              <div class="rail"><b>بيع</b><b class="on">مخزن</b><b>ديون</b><b>راجع</b><b>تقارير</b></div>
+              <div class="canvas">
+                <div class="turbo">
+                  <span class="no fig">7</span>
+                  <div class="tcard">
+                    <div class="cap">
+                      <span class="ocr">الاسم مقروء من الصورة — الأرقام تُكتب يدويًا</span>
+                      <span class="src">الصف 7 من الصورة</span>
+                    </div>
+                    <div class="tf">
+                      <label>اسم المنتج</label>
+                      <div class="in">سيليكون شفاف</div>
+                      <div class="two">
+                        <div><label>الكمية</label><div class="in fig">12</div></div>
+                        <div><label>سعر الشراء</label><div class="in empty">—</div></div>
+                      </div>
+                      <div class="strip">
+                        <span class="chip done">✓ صبغ</span>
+                        <span class="chip done">✓ مسامير</span>
+                        <span class="chip done">✓ لاصق</span>
+                        <span class="chip now">سيليكون</span>
+                        <span class="chip">شبك</span>
+                        <span class="chip">براغي</span>
+                        <span class="chip fig">+18</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ THE PAPER COMES BACK ══ -->
+<section class="paper">
+  <div class="wrap">
+    <div class="moment rise">
+      <div>
+        <span class="eyebrow">الدين</span>
+        <h2 style="font-size:clamp(1.5rem,3vw,2.15rem)">وورقة تُسلّمها للعميل، لا شاشة تطلب منه أن يثق بك.</h2>
+        <p class="say">كشف حساب مطبوع: كل دَين وكل دفعة بتاريخها، ومن سجّلها، والرصيد الباقي بالرقم وبالكلام. من دفع يجد دفعته، ومن نسي يقرأ متى صار الدَين — والورقة تبقى بيده بعد أن يخرج من محلّك.</p>
+      </div>
+      <div class="art">
+        <div class="a4">
+          <div class="hd">
+            <div><div class="co">محل الهدى للأصباغ</div><div class="ti">كشف حساب عميل</div></div>
+            <div class="ti fig">2026/08/17</div>
+          </div>
+          <div class="band">
+            <div class="who">حيدر عبد الله<span class="fig">0770 000 0000</span></div>
+            <div class="bal"><b class="fig">145,000</b><em>مئة وخمسة وأربعون ألف دينار</em></div>
+          </div>
+          <table>
+            <thead><tr><th>التاريخ</th><th>النوع</th><th>المسؤول</th><th class="n">المبلغ</th><th class="n">الرصيد</th></tr></thead>
+            <tbody>
+              <tr><td class="fig">08/02</td><td><span class="pill s">بيع</span></td><td>علي</td><td class="n fig">120,000</td><td class="n fig">120,000</td></tr>
+              <tr><td class="fig">08/09</td><td><span class="pill p">دفعة</span></td><td>علي</td><td class="n fig">75,000</td><td class="n fig">45,000</td></tr>
+              <tr><td class="fig">08/15</td><td><span class="pill s">بيع</span></td><td>حسن</td><td class="n fig">100,000</td><td class="n fig">145,000</td></tr>
+            </tbody>
+          </table>
+          <div class="sign">إقرار استلام: ______________________ &nbsp;&nbsp; التاريخ: __________</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ SCREEN: STOCK + REPORTS ══ -->
+<section class="screen">
+  <div class="wrap">
+
+    <div class="moment rise">
+      <div>
+        <span class="label">النواقص</span>
+        <h2>ينبّهك قبل أن ينفد، على أساس ما يبيعه محلّك فعلاً.</h2>
+        <p class="say">الحدّ ليس رقماً تكتبه لكل صنف ثم تنساه: يُقاس على سرعة بيع الصنف نفسه. الذي يدور كل أسبوع ينبّهك مبكراً، والذي يجلس شهراً لا يزعجك.</p>
+      </div>
+      <div class="art">
+        <div class="tilt">
+          <div class="win">
+            <div class="win-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="who"><span>نواقص المخزون</span><span class="av"></span></span></div>
+            <div class="win-body">
+              <div class="rail"><b>بيع</b><b class="on">مخزن</b><b>ديون</b><b>راجع</b><b>تقارير</b></div>
+              <div class="canvas">
+                <div class="card">
+                  <div class="srow">
+                    <div><div>صبغ أبيض ٢٠ لتر</div><div class="meter"><i class="low" data-w="18"></i></div></div>
+                    <div class="num fig">3 / 16</div>
+                  </div>
+                  <div class="srow">
+                    <div><div>مسامير ٣ إنش</div><div class="meter"><i data-w="46"></i></div></div>
+                    <div class="num fig">55 / 120</div>
+                  </div>
+                  <div class="srow">
+                    <div><div>سيليكون شفاف</div><div class="meter"><i data-w="82"></i></div></div>
+                    <div class="num fig">41 / 50</div>
+                  </div>
+                </div>
+                <div class="toast">🔔 <span><b>صبغ أبيض ٢٠ لتر</b> — بقي 3، والمحل يبيع 8 في الأسبوع.</span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="moment flip rise">
+      <div>
+        <span class="label">التقارير</span>
+        <h2>أرقام المحل كلها في مكان واحد.</h2>
+        <p class="say">ما بِعتَه، وما رجع، والربح بعد الخصم، ومن عليه دَين ومنذ متى — كلها من نفس البيانات التي سجّلها الكاشير، بلا إدخال ثانٍ ولا ملف إكسل جانبي.</p>
+      </div>
+      <div class="art">
+        <div class="tilt">
+          <div class="win">
+            <div class="win-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="who"><span>التقارير</span><span class="av"></span></span></div>
+            <div class="win-body">
+              <div class="rail"><b>بيع</b><b>مخزن</b><b>ديون</b><b>راجع</b><b class="on">تقارير</b></div>
+              <div class="canvas">
+                <div class="kpis">
+                  <div class="kpi"><b class="fig" data-count="2450000">0</b><span>بيع الشهر</span></div>
+                  <div class="kpi"><b class="fig" data-count="18">0</b><span>مدين</span></div>
+                  <div class="kpi"><b class="fig" data-count="7">0</b><span>ناقص</span></div>
+                </div>
+                <div class="card" style="margin-top:.5rem">
+                  <div class="bars">
+                    <div data-h="42"></div><div data-h="58"></div><div data-h="35"></div>
+                    <div data-h="71"></div><div data-h="64"></div><div data-h="88"></div>
+                  </div>
+                  <div class="axis"><span>آذار</span><span>نيسان</span><span>أيار</span><span>حزيران</span><span>تموز</span><span>آب</span></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ══ CLOSE ══ -->
+<section class="paper close" id="تواصل">
+  <div class="narrow">
+    <span class="eyebrow">الطلب</span>
+    <h2>تريد أن تراه على محلّك؟</h2>
+    <p>راسلني وأشرح لك ما يفعله على بضاعتك أنت، لا على بيانات تجريبية. إن ناسبك، نتّفق.</p>
+    <!-- PENDING: same Telegram handle as the header button. -->
+    <a class="cta" aria-disabled="true">راسلني على تلغرام</a>
+    <p class="honest">لا يوجد تنزيل في هذه الصفحة. البرنامج يُطلب بالمراسلة، ويُنصَّب على جهازك.</p>
+  </div>
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

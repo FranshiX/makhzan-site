@@ -1,0 +1,14 @@
+<!-- Makhzan mark alone — no tile, transparent background. For Bayan's marketing use: letterheads,
+     social avatars, slide corners, anywhere the app icon's amber tile would fight the layout.
+
+     Same paths as Makhzan.svg, unedited — only the tile rect is gone and the viewBox is cropped to
+     the mark's own bounds (x 87..214, y 38..215 in the icon's 256 grid). Keeping the coordinates
+     identical means a change to the master drawing can be copied across without re-deriving anything.
+
+     Fill is NavyDeepBrush, for light backgrounds. On a dark background swap both fills to
+     AmberBrush #f59e0b — that is the app icon's own pairing and the only other approved one.
+     This file is NOT used by the app; nothing builds against it. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="87 38 127 177" width="127" height="177">
+  <path d="M 160 38 a 54 54 0 1 1 -0.1 0 z M 160 68 a 24 24 0 1 0 0.1 0 z" fill="#0f1e2e"/>
+  <path d="M 128 132 Q 116 170 104 198" fill="none" stroke="#0f1e2e" stroke-width="34" stroke-linecap="round"/>
+</svg>
