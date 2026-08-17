@@ -31,7 +31,7 @@
     <h1>كل شيء كان في الدفتر.<br>الآن <em>يجمع نفسه</em>.</h1>
     <p class="lede">
       مخزن برنامج للمحل: بيع، وديون، ومخزون، وورقة تطبعها وتسلّمها للعميل.
-      يشتغل على حاسبة محلّك، ولا يتوقّف إذا انقطع الإنترنت.
+      يشتغل على حاسبة محلّك: البيع والمخزون والديون تعمل بلا إنترنت.
     </p>
 
     <div class="pair">
@@ -98,9 +98,14 @@
         <h3>نسخة خارج المحل</h3>
         <p>الحاسبة تُسرق، ويحترق المحل، ويصاب القرص بعطل. ما لا يُفقد هو ما يوجد في مكانين — دفترك يبقى قائماً ولو لم يبقَ الجهاز.</p>
       </div>
+      <!-- Bayan, verified against code: the first draft said a wrong PAYMENT is corrected by a
+           compensating entry. No such path exists — `ReversePayment` returns zero hits across
+           src/; it is decision 51 gating Z-3, signed and unbuilt. What IS built is the return
+           path (R-RET / B39: a return reduces the debt with a counter-entry, never an edit) and
+           ActorName on every statement line. Claim re-derived onto those two. -->
       <div class="entry rise">
         <h3>التاريخ لا يُمسح</h3>
-        <p>الدفعة الخاطئة تُصحَّح بقيدٍ مقابل يظهر في الكشف، لا بحذفٍ يخفي ما حصل. من بيده وصل يجد وصله في الورقة دائماً، وهذا ما يجعل الورقة تُصدَّق.</p>
+        <p>الراجع لا يُعدِّل البيعة القديمة، بل يقيّد قيداً مقابلاً يظهر في الكشف. وكل سطر في الكشف يحمل تاريخه واسم من سجّله — فمن بيده وصل يجد وصله، وهذا ما يجعل الورقة تُصدَّق.</p>
       </div>
       <div class="entry rise">
         <h3>عربي من الأساس</h3>
@@ -164,7 +169,12 @@
       <div>
         <span class="label">الإدخال</span>
         <h2>صوّر فاتورة المورّد، وراجعها بطاقةً بطاقة.</h2>
+        <!-- Bayan: the offline line in the hero and this feature must not be read as one claim.
+             clsAnchorEngineOcrReader — Azure AI Vision (cloud) is the primary engine, Tesseract
+             is the local fallback for when it is unreachable. The boundary is stated out loud
+             below rather than the claim being softened. Claim scope ≤ evidence scope. -->
         <p class="say">الأسماء تُقرأ من الصورة، والأرقام تكتبها أنت — لأن الرقم الخاطئ في المخزن أسوأ من الرقم المتأخر. بطاقة واحدة أمامك في كل مرة، وشريط أسفلها يقول ما خلص وما بقي، وتقدر ترجع لأي صنف راجعتَه.</p>
+        <p class="say" style="font-size:.9rem;opacity:.8">قراءة الصورة تحتاج اتصالاً لتعطي أدقّ نتيجة؛ وعند انقطاعه يشتغل قارئ محلي بديل. أمّا البيع والمخزون والديون فلا تنتظر الشبكة أصلاً.</p>
       </div>
       <div class="art">
         <div class="tilt">
