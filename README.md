@@ -22,10 +22,11 @@ thirteenth and the two 2026-08-20 website passes), not here. The logo files are 
 the master drawing changes, both copies need updating. Every colour, radius and shadow in
 `style.css` is canon from that repo's `CODEX/09_UI_MAP/DESIGN_SYSTEM.md` and `App.xaml`.
 
-## Not published
+## Launch status
 
-No Pages, no host, no domain. The remaining launch inputs are the Telegram handle (the final button
-is built and inert), Firebase Hosting/domain deployment, and one real-device pass on mobile Safari.
+The phone and Telegram actions are live, and the repository includes the Sites build configuration
+used for hosting. A custom domain and one real-device pass on mobile Safari remain optional launch
+follow-ups; emulation is not physical hardware.
 
 IBM Plex Sans Arabic is self-hosted, both invoice replicas enter from the physical right, and all
 sale examples use the plumbing/PPR sector matched to Flemer's live captures. The public page carries
@@ -35,7 +36,7 @@ only the complete workflows that exist, and leaves the project's development led
 
 ## Current presentation state
 
-- The hero is one GSAP timeline: product add → `20,500` to `26,250` total → right-side invoice drawer
+- The hero is one GSAP timeline: product add → `10,000` total → right-side invoice drawer
   → save toast → receipt feeding from a printer slot.
 - Playback pauses off-screen and while the document is hidden. Replay, Pause/Resume and
   `prefers-reduced-motion` states are explicit.
@@ -47,8 +48,7 @@ only the complete workflows that exist, and leaves the project's development led
 - A closing synthesis explains the product's strongest system-level value: one sale moves inventory,
   debt, paper and reports rather than ending at the receipt. A second card frames quick-add as keeping
   the customer queue moving, not as an incomplete product mechanism.
-- Four native `details` FAQs answer operational questions — offline work, cash/deferred sales,
-  payment reversal and installation — without JavaScript.
+- Native `details` FAQs answer the main operational and buying questions without JavaScript.
 - Desktop navigation links to the long page's major sections; phones keep the short header and CTA.
 - Dedicated responsive layouts cover the app replicas, navigation rails, invoice drawers, Turbo
   Entry card, stock meters, charts, printed customer statements and payment-correction history.

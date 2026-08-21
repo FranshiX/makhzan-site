@@ -73,7 +73,7 @@ body{
 
 h1,h2,h3{margin:0;text-wrap:balance;line-height:1.25;font-weight:700}
 p{margin:0}
-.section-title{font-size:clamp(1.5rem,3vw,2.15rem)}
+.section-title{font-size:clamp(1.75rem,3.4vw,2.5rem)}
 .danger-figure{color:var(--danger)}
 .aside-note{font-size:.9rem;opacity:.8}
 .reports-card{margin-top:.5rem}
@@ -130,8 +130,6 @@ header{position:sticky;top:0;z-index:40;background:rgba(236,239,243,.9);backdrop
   padding:.6rem 1.1rem;font:inherit;font-weight:700;font-size:.95rem;
   text-decoration:none;transition:background-color .2s ease,border-color .2s ease,transform .2s ease,box-shadow .2s ease;
 }
-/* PENDING: the Telegram handle. Until it lands the button is inert by design —
-   remove [aria-disabled] and add the href, nothing else changes. */
 .cta:hover{background:#ffad1f;box-shadow:var(--e-rest);transform:translateY(-1px)}
 .cta:active{background:var(--amber-deep);transform:translateY(0)}
 .cta[aria-disabled="true"],.cta.is-disabled{cursor:not-allowed;opacity:.58;box-shadow:none;transform:none}
@@ -141,9 +139,9 @@ a,button{touch-action:manipulation;-webkit-tap-highlight-color:rgba(245,158,11,.
 /* ── hero ────────────────────────────────────────────────────────────────── */
 .hero{padding-top:clamp(3rem,7vw,5.5rem);padding-bottom:clamp(2.5rem,5vw,4.5rem);overflow-x:clip}
 .hero+.paper{padding-top:clamp(2.5rem,5vw,4.5rem)}
-.hero h1{font-size:clamp(2.1rem,5.2vw,3.9rem)}
+.hero h1{font-size:clamp(2.35rem,5.5vw,4.25rem);max-width:18ch}
 .hero h1 em{font-style:normal;background:linear-gradient(transparent 62%,rgba(245,158,11,.42) 62%)}
-.hero .lede{font-size:clamp(1.05rem,2vw,1.28rem);color:var(--ink-soft);max-width:56ch;margin-top:1.3rem}
+.hero .lede{font-size:clamp(1.12rem,2.15vw,1.38rem);color:var(--ink-soft);max-width:55ch;margin-top:1.4rem;line-height:1.85}
 
 .pair{margin-top:clamp(2.5rem,6vw,4.5rem);display:grid;gap:clamp(1.5rem,4vw,3rem);grid-template-columns:1fr;align-items:center}
 @media(min-width:900px){.pair{grid-template-columns:.72fr 1.28fr}}
@@ -728,8 +726,8 @@ a,button{touch-action:manipulation;-webkit-tap-highlight-color:rgba(245,158,11,.
   color:var(--amber-deep);font-family:var(--mono);font-size:.68rem;font-weight:700;
 }
 @media(min-width:760px){.entry{grid-template-columns:2.5rem 14rem minmax(0,1fr);align-items:start}.entry::before{grid-row:auto}.entry p{grid-column:3}}
-.entry h3{font-size:1.12rem}
-.entry p{color:var(--ink-soft);max-width:62ch}
+.entry h3{font-size:1.24rem;line-height:1.4}
+.entry p{color:var(--ink-soft);max-width:62ch;font-size:1.02rem}
 
 /* Customer statements: one account's audit trail beside the all-debtors export. */
 .statement-copy .say{max-width:55ch}
@@ -843,8 +841,8 @@ a,button{touch-action:manipulation;-webkit-tap-highlight-color:rgba(245,158,11,.
 }
 .moment+.moment{margin-top:clamp(3.5rem,8vw,6rem);padding-top:clamp(3.5rem,8vw,6rem);border-top:1px solid rgba(255,255,255,.1)}
 .paper .moment+.moment{border-top-color:var(--rule)}
-.moment h2{font-size:clamp(1.5rem,3vw,2.15rem)}
-.moment .say{margin-top:.9rem;color:#c2cddb;max-width:52ch}
+.moment h2{font-size:clamp(1.75rem,3.4vw,2.5rem)}
+.moment .say{margin-top:1rem;color:#c2cddb;max-width:52ch;font-size:1.02rem;line-height:1.85}
 .paper .moment .say{color:var(--ink-soft)}
 .label{font-size:.8rem;color:var(--amber);margin-bottom:.7rem}
 
@@ -881,9 +879,23 @@ a,button{touch-action:manipulation;-webkit-tap-highlight-color:rgba(245,158,11,.
 
 /* ── close ───────────────────────────────────────────────────────────────── */
 .close{text-align:center}
-.close h2{font-size:clamp(1.7rem,4vw,2.6rem)}
-.close p{margin:1.1rem auto 0;max-width:48ch;color:var(--ink-soft)}
-.close .cta{margin-top:1.8rem;font-size:1.05rem;padding:.8rem 1.6rem}
+.contact-panel{
+  position:relative;overflow:hidden;padding:clamp(2.25rem,6vw,4rem);
+  border:1px solid var(--rule);border-radius:var(--r-card);
+  background:linear-gradient(145deg,rgba(255,255,255,.9),rgba(248,250,252,.72));
+  box-shadow:var(--e-rest);
+}
+.contact-panel::before{content:"";position:absolute;inset-block:0;inset-inline-start:0;width:7px;background:var(--amber)}
+.close h2{font-size:clamp(2rem,4.5vw,3rem);max-width:20ch;margin-inline:auto}
+.close .contact-lede{margin:1.25rem auto 0;max-width:50ch;color:var(--ink-soft);font-size:1.08rem}
+.contact-actions{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-top:2rem}
+.close .cta{font-size:1.05rem;padding:.82rem 1.5rem;min-width:10rem;justify-content:center}
+.telegram-cta{background:var(--ink);border-color:var(--ink);color:var(--white)}
+.telegram-cta:hover{background:var(--ink-soft);border-color:var(--ink-soft);color:var(--white)}
+.telegram-cta:active{background:#0b1724}
+.contact-details{display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:.55rem;margin:1.2rem auto 0;font-size:.95rem}
+.contact-details a{color:var(--ink-soft);font-weight:700;text-underline-offset:.2em}
+.contact-details a:hover{color:var(--amber-deep)}
 .honest{margin-top:1.2rem;font-size:.86rem;color:var(--muted)}
 
 /* ── footer ──────────────────────────────────────────────────────────────── */
@@ -933,7 +945,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);background:var(--ink);color:va
   .bar{padding:max(.58rem,env(safe-area-inset-top)) 0 .58rem}
   .brand{gap:.45rem;font-size:.95rem}.brand svg{height:23px}
   .header-cta{padding:.48rem .68rem;font-size:.78rem}
-  .hero h1{font-size:clamp(1.85rem,10.6vw,2.55rem)}
+  .hero h1{font-size:clamp(2rem,10.8vw,2.75rem)}
   .hero h1 br{display:none}
   .hero-sale{min-height:382px;border-radius:10px}
   .hero-kpi{padding:.45rem}.hero-kpi span{font-size:.55rem}.hero-kpi b{font-size:.78rem}
@@ -943,7 +955,7 @@ footer{border-top:1px solid rgba(255,255,255,.08);background:var(--ink);color:va
   .hero-controls button{min-height:44px}
 
   .entry{grid-template-columns:2.35rem minmax(0,1fr);gap-inline:.75rem}
-  .entry h3{font-size:1.02rem}.entry p{font-size:.92rem;line-height:1.75}
+  .entry h3{font-size:1.12rem}.entry p{font-size:.98rem;line-height:1.8}
 
   .win-body{display:block}
   .rail{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:.2rem;padding:.35rem}
@@ -994,6 +1006,8 @@ footer{border-top:1px solid rgba(255,255,255,.08);background:var(--ink);color:va
   .correction-row strong{grid-column:4}.correction-row em{min-width:3.2rem}.correction-row strong{min-width:3.35rem}
   .reversed-chip,.reversal-chip{grid-row:2;grid-column:2;justify-self:start}
   .reversal-row{margin-inline-start:.55rem}.correction-result b{line-height:1.35}
+  .contact-panel{padding:2.1rem 1.2rem}
+  .contact-actions{display:grid}
   .close .cta{width:100%;justify-content:center}
   .faq summary{padding-block:.9rem;font-size:.94rem}
   .footer-inner nav{flex-wrap:wrap}

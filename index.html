@@ -4,16 +4,16 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#eceff3">
-  <title>مخزن — برنامج المحل</title>
-  <meta name="description" content="مخزن: برنامج للمحل — بيع، وديون، ومخزون، وكشف حساب مطبوع تسلّمه للعميل.">
+  <title>مخزن — إدارة المبيعات والمخزون وحسابات العملاء</title>
+  <meta name="description" content="مخزن نظام لإدارة المبيعات والمخزون وديون العملاء والراجع والتقارير للشركات الإنشائية، ويواصل العمل عند انقطاع الإنترنت.">
   <meta property="og:locale" content="ar_IQ">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="مخزن — برنامج المحل">
-  <meta property="og:description" content="بيع نقدي وآجل، مخزون وراجع، ديون وتقارير، وإيصالات وكشوف حساب — في برنامج واحد للمحل.">
+  <meta property="og:title" content="مخزن — إدارة المبيعات والمخزون وحسابات العملاء">
+  <meta property="og:description" content="المبيعات والمخزون وديون العملاء والراجع والتقارير في نظام واحد للشركات الإنشائية.">
   <link rel="icon" href="assets/makhzan-mark.svg">
   <link rel="preload" href="assets/fonts/IBMPlexSansArabic-Regular.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/IBMPlexSansArabic-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css?v=20260822">
 </head>
 <body id="top">
 
@@ -34,7 +34,7 @@
       <a href="#المزايا">ما ينجزه</a>
       <a href="#الأسئلة">الأسئلة</a>
     </nav>
-    <a class="cta header-cta" href="#تواصل">طريقة الطلب <span aria-hidden="true">↓</span></a>
+    <a class="cta header-cta" href="#تواصل">تواصل معنا <span aria-hidden="true">↓</span></a>
   </div>
 </header>
 
@@ -42,566 +42,1123 @@
 
 <!-- ══ HERO — the notebook, and the same thing adding itself up ══ -->
 <section class="paper hero">
-  <div class="wrap">
-    <span class="eyebrow">دفتر المحل</span>
-    <h1>كل شيء كان في الدفتر.<br>الآن <em>يجمع نفسه</em>.</h1>
-    <p class="lede">
-      مخزن يدير شغل المحل من مكان واحد: بيع نقدي وآجل، مخزون وراجع، ديون وتقارير،
-      وإيصالات وكشوف حساب جاهزة للطباعة. ويواصل العمل على حاسبة محلّك حتى عند انقطاع الإنترنت.
-    </p>
+<div class="wrap">
 
-    <p class="sr-only">مشهد توضيحي يحوّل حسبة مكتوبة في الدفتر إلى بيع محفوظ، ثم يطبع إيصالًا جاهزًا للعميل.</p>
-    <div class="pair hero-pair" aria-hidden="true">
-      <div class="note rise hero-note">
-        <div class="head"><span>قبل</span><small>دفتر وحسبة بالذاكرة</small></div>
-        <ul>
-          <li><span>أنبوب ألماني</span><span class="amt">١٠٬٢٥٠</span></li>
-          <li><span>موديل ١٠١</span><span class="amt">١٠٬٢٥٠</span></li>
-          <li class="struck"><span>أنبوب أوكراني</span><span class="amt">٥٬٧٥٠</span></li>
-          <li><span>المجموع؟</span><span class="amt">؟</span></li>
-        </ul>
-        <div class="foot">الصفحة الأخيرة ممزّقة، والمجموع بالذاكرة.</div>
-      </div>
+  <span class="eyebrow">تطبيق لإدارة الشركات الإنشائية</span>
 
-      <div class="rise hero-app">
-        <div class="hero-sale" aria-label="شاشة البيع في مخزن">
-          <div class="hero-kpis">
-            <div class="hero-kpi"><span>مبيعات اليوم</span><b>••••••</b></div>
-            <div class="hero-kpi"><span>فواتير اليوم</span><b class="fig">4</b></div>
-            <div class="hero-kpi"><span>فواتير معلّقة</span><b class="fig">0</b></div>
-            <div class="hero-kpi low"><span>مخزون منخفض</span><b class="fig">11</b></div>
-          </div>
+  <h1>تطبيق مخزن لإدارة المبيعات، والمخزون، وحسابات العملاء.</h1>
 
-          <div class="hero-catalog">
-            <b class="hero-search-label">بحث عن منتج</b>
-            <div class="hero-search">ابحث بالاسم أو رمز المنتج</div>
-            <div class="hero-tags"><span>تشطيبات</span><span>سباكة</span><span>كهرباء</span><span>أنابيب</span></div>
-            <div class="hero-products">
-              <div class="hero-product"><span class="hero-add">+</span><span><b>أنبوب 1 PPR إنش ألماني</b><small>المخزون: 197 · متر</small></span><strong class="fig">10,250</strong></div>
-              <div class="hero-product"><span class="hero-add">+</span><span><b>أنبوب 1 PPR إنش ألماني — موديل 101</b><small>المخزون: 305 · متر</small></span><strong class="fig">10,250</strong></div>
-              <div class="hero-product hero-row-new"><span class="hero-add">+</span><span><b>أنبوب 1 PPR إنش أوكراني</b><small>المخزون: 197 · متر</small></span><strong class="fig">5,750</strong></div>
-            </div>
-          </div>
+  <p class="lede">
+    أدر المبيعات والمخزون وديون العملاء والراجع، واستخرج التقارير والإيصالات وكشوف الحساب
+    من نظام واحد — مصمم ليبقى شغّالًا حتى عند انقطاع الإنترنت.
+  </p>
 
-          <div class="hero-bottom">
-            <span class="hero-drafts">▧ المسودات</span>
-            <span class="hero-total"><small>الإجمالي</small><b class="fig" data-hero-total="26250">0</b></span>
-            <span class="hero-sell">بيع&nbsp; 🛒</span>
-          </div>
+  <p class="sr-only">
+    مشهد توضيحي لعملية بيع داخل مخزن، من إضافة المواد إلى حفظ البيعة وطباعة الإيصال.
+  </p>
 
-          <div class="hero-veil" aria-hidden="true"></div>
-          <section class="hero-drawer" aria-label="فاتورة البيع">
-            <div class="hero-drawer-head"><i></i><b>الفاتورة</b><span>×</span></div>
-            <small class="hero-invoice-meta">الكاشير: admin · رقم الفاتورة: جديد</small>
-            <div class="hero-customer">
-              <b>بيانات العميل</b>
-              <span>اسم العميل (مطلوب)</span>
-              <strong>أحمد</strong>
-              <span>رقم الهاتف (مطلوب للبيع الآجل)</span>
-            </div>
-            <div class="hero-discount"><span>الخصم: بدون</span><span>المجموع الفرعي <b class="fig">26,250</b></span></div>
-            <div class="hero-final"><span>الإجمالي النهائي</span><b class="fig">26,250</b></div>
-            <div class="hero-payment"><span class="on">نقدي</span><span>آجل</span></div>
-            <div class="hero-actions"><span>حفظ كمسودة</span><b>حفظ وطباعة</b></div>
-          </section>
+  <div class="pair hero-pair" aria-hidden="true">
 
-          <div class="hero-toast" role="status"><b>✓</b><span>تم البيع بنجاح — إيصال رقم 31503، الصافي 26,250</span></div>
+    <div class="note rise hero-note">
+      <div class="head"><span>قبل</span><small>دفتر وحسبة بالذاكرة</small></div>
 
-          <div class="hero-receipt-slot" aria-label="معاينة الإيصال المطبوع">
-            <div class="hero-receipt-paper">
-              <div class="hero-receipt-title">الشركة الافتراضية</div><small>Main Branch</small>
-              <div class="hero-receipt-meta"><span>الاسم: أحمد</span><span>رقم الوصل: 31503</span></div>
-              <div class="hero-receipt-row"><b>اسم المادة</b><b>المجموع</b></div>
-              <div class="hero-receipt-row"><span>أنبوب ألماني</span><span class="fig">10,250</span></div>
-              <div class="hero-receipt-row"><span>موديل 101</span><span class="fig">10,250</span></div>
-              <div class="hero-receipt-row"><span>أنبوب أوكراني</span><span class="fig">5,750</span></div>
-              <div class="hero-receipt-net"><span>المبلغ الصافي</span><b class="fig">26,250</b></div>
-            </div>
-          </div>
+      <ul>
+        <li><span>مصباح لد 30 واط TAAM</span><span class="amt">٣٬٥٠٠</span></li>
+        <li><span>مسمار نجاري 2.5 انج فولاذ</span><span class="amt">٥٬٠٠٠</span></li>
+        <li class="struck"><span>تيب كهرباء أسود</span><span class="amt">١٬٥٠٠</span></li>
+        <li><span>المجموع؟</span><span class="amt">؟</span></li>
+      </ul>
 
-          <span class="hero-flight fig" aria-hidden="true">1</span>
 
-          <div class="hero-cursor" aria-hidden="true">
-            <i></i>
-            <svg viewBox="0 0 18 24"><path d="M2 1.5v17l4.3-4.2 3.1 7.4 3.1-1.4-3.2-7.2h6.1L2 1.5Z"/></svg>
-          </div>
-        </div>
-
-        <div class="hero-story">
-          <i></i>
-          <span class="hero-story-add">أضف المادة.</span>
-          <span class="hero-story-save">احفظ البيعة.</span>
-          <span class="hero-story-print">والإيصال جاهز ببياناته.</span>
-        </div>
-      </div>
     </div>
-    <div class="hero-controls" aria-label="التحكم في المشهد التوضيحي للبيع">
-      <button class="hero-replay" type="button">
-        <span aria-hidden="true">↻</span> أعد المشهد
-      </button>
-      <button class="hero-pause" type="button" aria-pressed="false">
-        <span class="hero-pause-icon" aria-hidden="true">Ⅱ</span>
-        <span class="hero-pause-label">أوقف الحركة</span>
-      </button>
+
+    <div class="rise hero-app">
+
+      <div class="hero-sale" aria-label="شاشة البيع في مخزن">
+
+        <div class="hero-kpis">
+          <div class="hero-kpi"><span>مبيعات اليوم</span><b>••••••</b></div>
+          <div class="hero-kpi"><span>فواتير اليوم</span><b class="fig">4</b></div>
+          <div class="hero-kpi"><span>فواتير معلّقة</span><b class="fig">0</b></div>
+          <div class="hero-kpi low"><span>مخزون منخفض</span><b class="fig">11</b></div>
+        </div>
+
+        <div class="hero-catalog">
+
+          <b class="hero-search-label">بحث عن منتج</b>
+
+          <div class="hero-search">ابحث بالاسم أو رمز المنتج</div>
+
+          <div class="hero-tags">
+            <span>تشطيبات</span>
+            <span>سباكة</span>
+            <span>كهرباء</span>
+            <span>عدد وأدوات</span>
+          </div>
+
+          <div class="hero-products">
+
+            <div class="hero-product">
+              <span class="hero-add">+</span>
+              <span>
+                <b>مصباح لد 30 واط TAAM</b>
+                <small>المخزون: 197 · قطعة</small>
+              </span>
+              <strong class="fig">3,500</strong>
+            </div>
+
+            <div class="hero-product">
+              <span class="hero-add">+</span>
+              <span>
+                <b>مسمار نجاري 2.5 انج فولاذ</b>
+                <small>المخزون: 305 · علبة</small>
+              </span>
+              <strong class="fig">5,000</strong>
+            </div>
+
+            <div class="hero-product hero-row-new">
+              <span class="hero-add">+</span>
+              <span>
+                <b>تيب كهرباء أسود</b>
+                <small>المخزون: 86 · قطعة</small>
+              </span>
+              <strong class="fig">1,500</strong>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="hero-bottom">
+          <span class="hero-drafts">▧ المسودات</span>
+
+          <span class="hero-total">
+            <small>الإجمالي</small>
+            <b class="fig" data-hero-total="10000">0</b>
+          </span>
+
+          <span class="hero-sell">بيع&nbsp; 🛒</span>
+        </div>
+
+        <div class="hero-veil" aria-hidden="true"></div>
+
+        <section class="hero-drawer" aria-label="فاتورة البيع">
+
+          <div class="hero-drawer-head">
+            <i></i>
+            <b>الفاتورة</b>
+            <span>×</span>
+          </div>
+
+          <small class="hero-invoice-meta">
+            الكاشير: admin · رقم الفاتورة: جديد
+          </small>
+
+          <div class="hero-customer">
+            <b>بيانات العميل</b>
+            <span>اسم العميل (مطلوب)</span>
+            <strong>أحمد يحيى</strong>
+            <span>رقم الهاتف (مطلوب للبيع الآجل)</span>
+          </div>
+
+          <div class="hero-discount">
+            <span>الخصم: بدون</span>
+            <span>المجموع الفرعي <b class="fig">10,000</b></span>
+          </div>
+
+          <div class="hero-final">
+            <span>الإجمالي النهائي</span>
+            <b class="fig">10,000</b>
+          </div>
+
+          <div class="hero-payment">
+            <span class="on">نقدي</span>
+            <span>آجل</span>
+          </div>
+
+          <div class="hero-actions">
+            <span>حفظ كمسودة</span>
+            <b>حفظ وطباعة</b>
+          </div>
+
+        </section>
+
+        <div class="hero-toast" role="status">
+          <b>✓</b>
+          <span>تم البيع بنجاح — إيصال رقم 31503، الصافي 10,000</span>
+        </div>
+
+        <div class="hero-receipt-slot" aria-label="معاينة الإيصال المطبوع">
+
+          <div class="hero-receipt-paper">
+
+            <div class="hero-receipt-title">الشركة الافتراضية</div>
+            <small>Main Branch</small>
+
+            <div class="hero-receipt-meta">
+              <span>الاسم: أحمد يحيى </span>
+              <span>رقم الوصل: 31503</span>
+            </div>
+
+            <div class="hero-receipt-row">
+              <b>اسم المادة</b>
+              <b>المجموع</b>
+            </div>
+
+            <div class="hero-receipt-row">
+              <span>مصباح لد 30 واط TAAM</span>
+              <span class="fig">3,500</span>
+            </div>
+
+            <div class="hero-receipt-row">
+              <span>مسمار نجاري 2.5 انج فولاذ</span>
+              <span class="fig">5,000</span>
+            </div>
+
+            <div class="hero-receipt-row">
+              <span>تيب كهرباء أسود</span>
+              <span class="fig">1,500</span>
+            </div>
+
+            <div class="hero-receipt-net">
+              <span>المبلغ الصافي</span>
+              <b class="fig">10,000</b>
+            </div>
+
+          </div>
+        </div>
+
+        <span class="hero-flight fig" aria-hidden="true">1</span>
+
+        <div class="hero-cursor" aria-hidden="true">
+          <i></i>
+          <svg viewBox="0 0 18 24">
+            <path d="M2 1.5v17l4.3-4.2 3.1 7.4 3.1-1.4-3.2-7.2h6.1L2 1.5Z"/>
+          </svg>
+        </div>
+
+      </div>
+
+      <div class="hero-story">
+        <i></i>
+        <span class="hero-story-add">أضف المواد.</span>
+        <span class="hero-story-save">احفظ البيعة.</span>
+        <span class="hero-story-print">والإيصال جاهز.</span>
+      </div>
+
     </div>
   </div>
+
+  <div class="hero-controls" aria-label="التحكم في المشهد التوضيحي للبيع">
+
+    <button class="hero-replay" type="button">
+      <span aria-hidden="true">↻</span>
+      أعد المشهد
+    </button>
+
+    <button class="hero-pause" type="button" aria-pressed="false">
+      <span class="hero-pause-icon" aria-hidden="true">Ⅱ</span>
+      <span class="hero-pause-label">أوقف الحركة</span>
+    </button>
+
+  </div>
+
+</div>
 </section>
 
 <!-- ══ PHILOSOPHY ══ -->
 <section class="paper" id="كيف-يعمل">
+
   <div class="narrow">
+
     <span class="eyebrow">لماذا مخزن</span>
-    <h2 class="section-title">مصمّم ليحمل شغل المحل كما هو.</h2>
+
+    <h2 class="section-title">
+      مبني لواقع العمل، لا للعرض فقط.
+    </h2>
+
+    <p class="section-lede">
+      في الشركة الحقيقية ينقطع الإنترنت، يخطئ الموظف، يتغير المخزون،
+      وتحتاج بعد أشهر أن تعرف ماذا حدث. مخزن مصمم لهذه التفاصيل من البداية.
+    </p>
 
     <div class="entries">
+
       <div class="entry rise">
-        <h3>الانقطاع لا يوقف البيع</h3>
-        <p>البرنامج يشتغل على حاسبة المحل نفسها، فلا ينتظر شبكة ليفتح وصلاً أو يسجّل بيعاً أو يحدّث المخزون والدَين.</p>
+        <span class="entry-kicker">بدون إنترنت</span>
+        <h3>البيع لا ينتظر الإنترنت.</h3>
+        <p>
+          البيع والمخزون والديون والإيصالات تستمر بالعمل على حاسبة الشركة نفسها،
+          حتى عندما ينقطع الاتصال.
+        </p>
       </div>
+
       <div class="entry rise">
-        <h3>الصلاحية قبل الزر</h3>
-        <p>كل مستخدم يرى داخل البرنامج ما تسمح به صلاحياته؛ الكاشير يصل إلى عمله اليومي، والمدير يحتفظ بما يخص الإدارة والإعدادات.</p>
+        <span class="entry-kicker">سجل واضح</span>
+        <h3>الخطأ يُصحَّح، لا يُمحى.</h3>
+        <p>
+          عند إرجاع بضاعة أو عكس دفعة، يتصحح الحساب من دون اختفاء العملية الأصلية.
+          يبقى واضحًا ماذا حدث، ومتى، ومن قام به.
+        </p>
       </div>
-      <!-- Verified against the shipped Ledger path: clsReversePaymentHandler appends a linked
-           compensating row for the complete PaymentGroupId, requires a reason, and never deletes
-           the original payment. Returns keep their own counter-entry path. -->
+
       <div class="entry rise">
-        <h3>التاريخ لا يُمسح</h3>
-        <p>الخطأ يُصحَّح من دون أن يختفي أثره: الراجع وعكس الدفعة يُسجَّلان كحركة مقابلة، وكل سطر في كشف العميل يحمل تاريخه واسم من سجّله. الحساب يتصحح، وتبقى قصته مفهومة.</p>
+        <span class="entry-kicker">حسابات العملاء</span>
+        <h3>الدين سجل، لا رقم.</h3>
+        <p>
+          البيع الآجل والدفعات والتعديلات وكشف الحساب تبقى ضمن سجل واحد،
+          لتعرف كيف تكوّن رصيد العميل بدل أن ترى رقمًا بلا قصة.
+        </p>
       </div>
+
       <div class="entry rise">
-        <h3>عربي من الأساس</h3>
-        <p>ليس ترجمةً لواجهة إنكليزية: الشاشة تُقرأ من اليمين، والورق المطبوع كذلك، والأرقام تُصطفّ عمودياً لتُجمع بالعين.</p>
+        <span class="entry-kicker">المخزون</span>
+        <h3>المخزون ينبهك قبل أن يفاجئك.</h3>
+        <p>
+          لا يكتفي مخزن بإخبارك بما لديك؛ يوضح المواد منخفضة المخزون،
+          وما يقترب من نقطة الطلب، وما بدأت حركته بالركود.
+        </p>
       </div>
+
+      <div class="entry rise">
+        <span class="entry-kicker">عملية مترابطة</span>
+        <h3>الفاتورة بداية الحركة، لا نهايتها.</h3>
+        <p>
+          كل بيعة تنعكس على المخزون وحساب العميل والتقارير،
+          فلا تعيش الفاتورة كعملية منفصلة عن بقية الشركة.
+        </p>
+      </div>
+
+      <div class="entry rise">
+        <span class="entry-kicker">الفروع والصلاحيات</span>
+        <h3>كل فرع داخل حدوده.</h3>
+        <p>
+          الشركة وفروعها ومستخدموها وصلاحياتهم تبقى منظمة بوضوح،
+          ليصل كل شخص إلى ما يحتاجه دون خلط بين العمل والإدارة.
+        </p>
+      </div>
+
+      <div class="entry rise">
+        <span class="entry-kicker">البيانات</span>
+        <h3>بياناتك تحت سيطرتك.</h3>
+        <p>
+          مخزن يعمل على حاسبات الشركة ويحتفظ بالعمل قريبًا منك،
+          فلا يصبح تشغيل شركتك مرهونًا باتصال دائم أو خدمة خارجية.
+        </p>
+      </div>
+
     </div>
+
   </div>
+
 </section>
 
 <!-- ══ SCREEN: CREDIT SALE + TURBO ══ -->
+
 <section class="screen" id="الشاشات">
+
   <div class="wrap">
 
     <div class="moment rise credit-feature">
+
       <div class="credit-copy">
+
         <span class="label">البيع الآجل</span>
-        <h2>قبل أن تتحول البيعة إلى دَين أكبر من الاتفاق.</h2>
-        <p class="say">اختر العميل في الوصل، فيجمع مخزن رصيده الحالي مع قيمة البيعة ويقارنه بالحد الذي حدّدته له. إن تجاوز المجموع الحد، لا تُحفظ البيعة ويظهر الفرق أمام الكاشير؛ وإن بقي داخله، تُسجّل مباشرة في كشف العميل.</p>
+
+        <h2>اعرف أثر البيع قبل أن يصبح دَينًا.</h2>
+
+        <p class="say">اختر العميل، ويعرض مخزن رصيده الحالي وما سيصبح عليه بعد البيعة قبل الحفظ. إن تجاوز المجموع حد الدين، يظهر الفرق مباشرة أمام الكاشير؛ وإن بقي داخله، تُسجّل البيعة في كشف العميل.</p>
+
         <!-- Bayan: R-SALE-09, enforced and pinned by CreditLimitBlocksDeferredSaleTests. This is
+
              a tier-3 consequence of a real enforced rule — no number attached to it, and it
+
              collapses cleanly back into the mechanism if a merchant asks how we know. -->
+
         <div class="credit-rule" role="note">
+
           <span aria-hidden="true">⌁</span>
-          <p><b>الحد يبقى بيد صاحب القرار.</b> يظهر للكاشير داخل الوصل، لكن تغييره يتم من شاشة العميل لا من شاشة البيع.</p>
+
+          <p><b>الكاشير يرى الحد. لا يغيّره.</b> يبقى حد الدين بيد من يملك صلاحية تعديله، بعيدًا عن ضغط لحظة البيع.</p>
+
         </div>
-        <p class="say aside-note">أمّا البيع النقدي فيبقى المسار الأسرع، بلا خطوات لا يحتاجها.</p>
+
+        <p class="say aside-note">والبيع النقدي يبقى مباشرًا، بلا خطوات لا يحتاجها.</p>
+
       </div>
+
       <div class="art credit-art" aria-hidden="true">
+
         <div class="credit-isolation">
+
           <div class="credit-customer">
+
             <span class="credit-avatar">ح</span>
-            <div><small>البيع الآجل إلى</small><b>حيدر عبد الله</b></div>
+
+            <div><small>البيع الآجل إلى</small><b>سيد حسن الموسوي</b></div>
+
             <em><span>حد الدين</span><b class="fig">300,000</b></em>
+
           </div>
 
           <div class="credit-equation">
+
             <div><small>الرصيد الحالي</small><b class="fig">145,000</b></div>
+
             <span>+</span>
+
             <div><small>هذه البيعة</small><b class="fig">180,000</b></div>
+
             <span>=</span>
-            <div class="credit-projected"><small>الرصيد بعدها</small><b class="fig">325,000</b></div>
+
+            <div class="credit-projected"><small>الرصيد بعد البيعة</small><b class="fig">325,000</b></div>
+
           </div>
 
           <div class="credit-threshold">
+
             <div class="threshold-labels"><span>ضمن الحد</span><b class="fig">الحد 300,000</b><em class="fig">+25,000</em></div>
+
             <div class="threshold-track"><i></i><span></span></div>
-            <small>المجموع يتجاوز الاتفاق بـ <b class="fig">25,000</b> دينار</small>
+
+            <small>البيعة تتجاوز حد العميل بـ <b class="fig">25,000</b> دينار</small>
+
           </div>
 
           <div class="credit-decision">
+
             <span class="decision-mark">!</span>
-            <p><small>قرار مخزن قبل الحفظ</small><b>لم تُسجّل البيعة الآجلة</b><em>خفّض قيمة البيعة، أو راجع حد العميل من شاشة العملاء.</em></p>
-            <span class="decision-state">موقوفة</span>
+
+            <p><small>قبل الحفظ</small><b>البيعة تتجاوز حد العميل</b><em>خفّض قيمة البيعة، أو راجع حد العميل من شاشة العملاء.</em></p>
+
+            <span class="decision-state">تحتاج مراجعة</span>
+
           </div>
 
           <div class="credit-actions"><span>رجوع للوصل</span><span class="credit-disabled">حفظ وطباعة</span></div>
+
           <div class="credit-owner"><span>⌁</span> الحد ظاهر للكاشير، وتعديله خارج شاشة البيع.</div>
+
         </div>
+
       </div>
+
+    </div>
+<!-- ///////////////////////////////////// -->
+   <div class="moment flip rise turbo-feature">
+
+  <div class="turbo-copy">
+
+    <span class="label">نظام الادخال السريع</span>
+
+    <h2>يقرأ مخزن. أنت تعتمد.</h2>
+
+
+
+    <p class="say">أدخل صورة فاتورة المورّد، فيقرأ مخزن أصنافها ويفصلها للمراجعة. أكّد الصحيح، أجّل ما يحتاج انتباهك، أو تجاهل ما لا تريده. لا يدخل شيء إلى المخزون قبل موافقتك.</p>
+
+    <div class="turbo-proof" role="note" aria-label="تقدير سرعة نظام الادخال السريع">
+
+      <strong class="fig"><span data-count="82">82</span><small>%</small></strong>
+
+      <span><b>تسريع يصل إلى أكثر من 80%</b><small>مقارنة بالإدخال اليدوي، بناءً على تقدير زمن كتابة الصنف ومراجعته مع هامش إضافي قدره 5 ثوانٍ لكل إدخال. النتيجة الفعلية تختلف بحسب الفاتورة وعدد أصنافها وسرعة المستخدم.</small></span>
+
     </div>
 
-    <div class="moment flip rise turbo-feature">
-      <div class="turbo-copy">
-        <span class="label">نظام التيربو</span>
-        <h2>فاتورة كاملة تدخل بسرعة، وأنت تبقى صاحب القرار.</h2>
-        <!-- Bayan: the offline line in the hero and this feature must not be read as one claim.
-             clsAnchorEngineOcrReader — Azure AI Vision (cloud) is the primary engine, Tesseract
-             is the local fallback for when it is unreachable. The boundary is stated out loud
-             below rather than the claim being softened. Claim scope ≤ evidence scope. -->
-        <p class="say">أدخل صورة فاتورة المورّد، فيفصل مخزن أصنافها ويعرضها واحداً واحداً للمراجعة. أكّد الصحيح، أجّل ما يحتاج وقتاً، أو تجاهله؛ ثم تراجع عن صف واحد أو عن العملية كلها إذا احتجت.</p>
-        <div class="turbo-proof" role="note" aria-label="نتيجة اختبار سرعة نظام التيربو">
-          <strong class="fig"><span data-count="90">90</span><small>%</small></strong>
-          <span><b>تسريع يصل إلى</b><small>في إدخال فواتير المورّد، بحسب اختبار عملي للميزة. وقد تختلف النتيجة باختلاف وضوح الفاتورة وعدد أصنافها.</small></span>
-        </div>
-        <p class="turbo-memory"><span aria-hidden="true">✓</span> يحفظ مخزن ما قرأه وما اعتمدته في كل صف، من دون أن يستبدل مراجعتك أو يقرر عنك.</p>
-        <p class="say aside-note">عند توفر الاتصال يستخدم مخزن القراءة الأدق، وإذا انقطع ينتقل إلى قارئ محلي بديل من دون أن يعطّل بقية عمل المحل.</p>
-      </div>
-      <div class="art turbo-art" aria-hidden="true">
-        <div class="turbo-isolation">
-          <div class="turbo-journey">
-            <div class="turbo-step invoice-step">
-              <span class="step-no fig">01</span>
-              <div class="mini-invoice">
-                <i></i><i></i><i></i><i></i>
-              </div>
-              <small>أدخل الصورة</small>
-            </div>
-            <span class="journey-arrow">‹</span>
-            <div class="turbo-step reading-step">
-              <span class="step-no fig">02</span>
-              <div class="scan-mark"><span></span><b class="fig">24</b></div>
-              <small>صنفاً تم فصلها</small>
-            </div>
-            <span class="journey-arrow">‹</span>
-            <div class="turbo-step stock-step">
-              <span class="step-no fig">04</span>
-              <div class="stock-mark">✓</div>
-              <small>يدخل ما أكدته فقط</small>
-            </div>
+    <p class="turbo-memory"><span aria-hidden="true">✓</span> مخزن يختصر الإدخال، لكنه لا يقرر عنك؛ ما يدخل إلى المخزون هو فقط ما راجعته واعتمدته.</p>
+
+    <p class="say aside-note">وعند تعذر القراءة عبر الإنترنت، ينتقل مخزن إلى قارئ محلي بديل من دون أن يعطّل بقية عمل النظام.</p>
+
+  </div>
+
+  <div class="art turbo-art" aria-hidden="true">
+
+    <div class="turbo-isolation">
+
+      <div class="turbo-journey">
+
+        <div class="turbo-step invoice-step">
+
+          <span class="step-no fig">01</span>
+
+          <div class="mini-invoice">
+
+            <i></i><i></i><i></i><i></i>
+
           </div>
 
-          <div class="isolated-review">
-            <div class="review-head">
-              <span><b class="fig">03</b> راجع الصنف</span>
-              <small class="fig">7 / 24</small>
-            </div>
-            <div class="review-origin"><span>من الصف 7 في الفاتورة</span><b>الاسم مقروء — القرار لك</b></div>
-            <div class="review-field">
-              <small>اسم المنتج</small>
-              <b>محبس PPR نحاس 1 إنج</b>
-              <em>مطابق لصنف في مخزنك</em>
-            </div>
-            <div class="review-numbers">
-              <div><small>الكمية</small><b class="fig">12</b></div>
-              <div><small>سعر الشراء</small><b class="fig">15,500</b></div>
-              <div><small>الوحدة</small><b>قطعة</b></div>
-            </div>
-            <div class="review-actions">
-              <span class="review-confirm">تأكيد وإضافة <b>✓</b></span>
-              <span>تأجيل</span>
-              <span>تجاهل</span>
-            </div>
-          </div>
+          <small>أدخل الصورة</small>
 
-          <div class="turbo-review-bar">
-            <span><b class="fig">6</b> مؤكدة</span>
-            <span><b class="fig">1</b> مؤجّلة</span>
-            <span><b class="fig">17</b> متبقية</span>
-            <span class="undo-row">↩ تراجع عن صف</span>
-          </div>
         </div>
+
+        <span class="journey-arrow">‹</span>
+
+        <div class="turbo-step reading-step">
+
+          <span class="step-no fig">02</span>
+
+          <div class="scan-mark"><span></span><b class="fig">24</b></div>
+
+          <small>صنفًا تم فصلها</small>
+
+        </div>
+
+        <span class="journey-arrow">‹</span>
+
+        <div class="turbo-step stock-step">
+
+          <span class="step-no fig">04</span>
+
+          <div class="stock-mark">✓</div>
+
+          <small>يدخل ما اعتمدته فقط</small>
+
+        </div>
+
       </div>
+
+      <div class="isolated-review">
+
+        <div class="review-head">
+
+          <span><b class="fig">03</b> راجع الصنف</span>
+
+          <small class="fig">7 / 24</small>
+
+        </div>
+
+        <div class="review-origin"><span>من الصف 7 في الفاتورة</span><b>الاسم مقروء — القرار لك</b></div>
+
+        <div class="review-field">
+
+          <small>اسم المنتج</small>
+
+          <b>قاطع كهرباء 32 أمبير </b>
+
+          <em>مطابق لصنف في مخزنك</em>
+
+        </div>
+
+        <div class="review-numbers">
+
+          <div><small>الكمية</small><b class="fig">12</b></div>
+
+          <div><small>سعر الشراء</small><b class="fig">18,500</b></div>
+
+          <div><small>الوحدة</small><b>قطعة</b></div>
+
+        </div>
+
+        <div class="review-actions">
+
+          <span class="review-confirm">تأكيد وإضافة <b>✓</b></span>
+
+          <span>تأجيل</span>
+
+          <span>تجاهل</span>
+
+        </div>
+
+      </div>
+
+      <div class="turbo-review-bar">
+
+        <span><b class="fig">6</b> مؤكدة</span>
+
+        <span><b class="fig">1</b> مؤجّلة</span>
+
+        <span><b class="fig">17</b> متبقية</span>
+
+        <span class="undo-row">↩ تراجع عن صف</span>
+
+      </div>
+
     </div>
 
   </div>
-</section>
 
+</div>
+<!-- ///////////////////////// -->
+  </div>
+
+</section>
 <!-- ══ COMPONENT ISOLATION: CUSTOMER STATEMENTS ══ -->
+
 <section class="paper">
+
   <div class="wrap">
+
     <div class="moment rise statement-feature">
+
       <div class="statement-copy">
+
         <span class="eyebrow">كشوف العملاء</span>
-        <h2 class="section-title">كشف لعميل واحد، أو ملف كامل لكل المدينين.</h2>
-        <p class="say">افتح حساب العميل لترى البيع والدفعات والراجع والتعديلات بترتيبها، مع اسم من سجّل كل حركة والرصيد بعد كل خطوة. اطبع كشفه وحده، أو جهّز جميع حسابات العملاء المدينة في عملية واحدة — ملخصاً شاملاً أو مع صفحة مفصلة لكل عميل.</p>
+
+        <h2 class="section-title">اعرف تفاصيل حساب كل عميل، واطبع كشفه عند الحاجة.</h2>
+
+        <p class="say">افتح حساب العميل لترى جميع عمليات البيع الآجل والدفعات والراجع والتعديلات، مع اسم الموظف الذي سجّل كل حركة والرصيد بعدها. ويمكنك طباعة كشف لعميل واحد، أو تجهيز كشوف جميع العملاء المدينين دفعة واحدة.</p>
+
         <div class="statement-proof" role="note" aria-label="نتيجة اختبار سرعة تصدير كشوف العملاء">
+
           <div><strong class="fig">30,000</strong><span>كشف عميل</span></div>
-          <b class="fig">≤ 3 ثوانٍ</b>
-          <p>في اختبار فعلي للتصدير. قد تختلف النتيجة حسب الجهاز وحجم تفاصيل الحسابات.</p>
+
+          <b class="fig">أقل من 3 ثوانٍ</b>
+
+          <p>في اختبار فعلي لتجهيز التصدير. وقد يختلف الزمن بحسب الجهاز وحجم تفاصيل الحسابات.</p>
+
         </div>
+
       </div>
 
       <div class="art statement-art" aria-hidden="true">
+
         <div class="statement-isolation">
+
           <div class="statement-modes">
+
             <span class="is-active">عميل واحد</span>
+
             <span>جميع المدينين</span>
+
             <em><b class="fig">30,000</b> حساب</em>
+
           </div>
 
           <div class="statement-workspace">
+
             <div class="customer-statement">
+
               <div class="statement-head">
-                <div><small>كشف حساب العميل</small><b>حيدر عبد الله</b></div>
+
+                <div><small>كشف حساب العميل</small><b>احمد يحيى</b></div>
+
                 <div class="statement-balance"><small>الرصيد الحالي</small><b class="fig">145,000</b></div>
+
               </div>
 
               <div class="statement-timeline">
+
                 <div class="statement-entry is-sale">
+
                   <i></i><span><small class="fig">08/02 · علي</small><b>بيع آجل</b></span>
+
                   <em class="fig">+120,000</em><strong class="fig">120,000</strong>
+
                 </div>
+
                 <div class="statement-entry is-payment">
+
                   <i></i><span><small class="fig">08/09 · علي</small><b>دفعة مستلمة</b></span>
+
                   <em class="fig">−75,000</em><strong class="fig">45,000</strong>
+
                 </div>
+
                 <div class="statement-entry is-return">
+
                   <i></i><span><small class="fig">08/12 · حسن</small><b>راجع بضاعة</b></span>
+
                   <em class="fig">−20,000</em><strong class="fig">25,000</strong>
+
                 </div>
+
                 <div class="statement-entry is-sale">
+
                   <i></i><span><small class="fig">08/15 · حسن</small><b>بيع آجل</b></span>
+
                   <em class="fig">+120,000</em><strong class="fig">145,000</strong>
+
                 </div>
+
               </div>
 
-              <div class="statement-legend"><span>الحركة</span><b>الرصيد بعدها</b></div>
+              <div class="statement-legend"><span>قيمة الحركة</span><b>الرصيد بعدها</b></div>
+
             </div>
 
             <div class="statement-export">
+
               <div class="export-title"><span>تجهيز الطباعة</span><small>PDF</small></div>
+
               <div class="export-scope">
+
                 <small>النطاق</small>
+
                 <b>جميع العملاء المدينين</b>
+
                 <span><i>✓</i> ملخص شامل</span>
+
                 <span><i>✓</i> صفحة مفصلة لكل عميل</span>
+
               </div>
+
               <div class="document-stack"><span></span><span></span><span></span><b class="fig">30,000</b><small>كشف جاهز</small></div>
+
               <div class="export-action">تصدير الكل <span>←</span></div>
+
             </div>
+
           </div>
 
           <div class="statement-complete">
+
             <span>✓</span>
+
             <p><b>تم تجهيز كشوف العملاء</b><small>ملف شامل مع صفحات منفصلة جاهزة للطباعة</small></p>
-            <em class="fig">≤ 3 ثوانٍ</em>
+
+            <em class="fig">أقل من 3 ثوانٍ</em>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
     <div class="moment flip rise correction-feature">
+
       <div class="correction-copy">
-        <span class="eyebrow">سجل التصحيح</span>
-        <h2 class="section-title">الدفعة الخطأ تُعكس، ولا تختفي.</h2>
-        <p class="say">إذا سُجّلت دفعة بمبلغ خاطئ، اخترها واكتب سبب التصحيح. يعيد مخزن العملية كاملة إلى دَين العميل — حتى لو كانت موزعة داخلياً على أكثر من دَين — ثم يُبقي الدفعة وعكسها متجاورين في الكشف، مع المبلغ والسبب واسم من نفّذ العكس.</p>
+
+        <span class="eyebrow">تصحيح الدفعات</span>
+
+        <h2 class="section-title">إذا سُجّلت دفعة بشكل خاطئ، صحّحها دون إرباك حساب العميل.</h2>
+
+        <p class="say">اختر الدفعة الخاطئة، واكتب سبب التصحيح، فيعيد مخزن المبلغ إلى رصيد العميل. تبقى الدفعة الأصلية ظاهرة، ويظهر معها التصحيح واسم من نفّذه لتعرف لاحقًا ما الذي حدث.</p>
+
         <div class="correction-rule" role="note">
+
           <span aria-hidden="true">↶</span>
-          <p><b>الحساب يتصحح، والتاريخ يبقى مفهوماً.</b> والراجع يتبع المبدأ نفسه: حركة جديدة تغيّر الرصيد، لا تعديل صامت لما سبق.</p>
+
+          <p><b>يُصحَّح الرصيد مباشرة.</b> وتبقى الدفعة الأصلية والتصحيح ظاهرين معًا في كشف العميل، بدل حذف العملية أو تغييرها دون أثر.</p>
+
         </div>
+
       </div>
 
       <div class="art correction-art" aria-hidden="true">
+
         <div class="correction-isolation">
+
           <div class="correction-context">
-            <div><small>كشف حساب</small><b>حيدر عبد الله</b></div>
+
+            <div><small>كشف حساب</small><b>سيد حسن الموسوي</b></div>
+
             <em><span>الرصيد بعد الدفعة الخاطئة</span><b class="fig">150,000</b></em>
+
           </div>
 
           <div class="correction-prompt">
+
             <div class="prompt-title">
+
               <span class="prompt-icon">↶</span>
-              <p><small>تصحيح مالي</small><b>عكس دفعة بمبلغ <span class="fig">500,000</span></b></p>
+
+              <p><small>تصحيح دفعة</small><b>عكس دفعة بمبلغ <span class="fig">500,000</span></b></p>
+
             </div>
-            <div class="prompt-reason"><small>سبب العكس — مطلوب</small><b>أُدخل المبلغ خطأ بدلاً من <span class="fig">50,000</span></b></div>
-            <div class="prompt-actions"><span>إلغاء</span><b>تأكيد العكس</b></div>
+
+            <div class="prompt-reason"><small>سبب التصحيح — مطلوب</small><b>أُدخل المبلغ خطأ بدلاً من <span class="fig">50,000</span></b></div>
+
+            <div class="prompt-actions"><span>إلغاء</span><b>تأكيد التصحيح</b></div>
+
           </div>
 
           <div class="correction-ledger">
-            <div class="ledger-caption"><span>الحركة الأصلية وعكسها</span><small>لا يُحذف أي سطر</small></div>
+
+            <div class="ledger-caption"><span>الدفعة والتصحيح</span><small>جميع التفاصيل ظاهرة في الكشف</small></div>
 
             <div class="correction-row original-row">
+
               <span class="ledger-dot"></span>
+
               <p><small class="fig">08/09 · علي</small><b>دفعة مستلمة</b></p>
-              <span class="reversed-chip">مُعكوسة</span>
+
+              <span class="reversed-chip">تم تصحيحها</span>
+
               <em class="fig">−500,000</em>
+
               <strong class="fig">150,000</strong>
+
             </div>
 
             <div class="correction-row reversal-row">
+
               <span class="ledger-dot"></span>
-              <p><small class="fig">08/20 · حسن</small><b>عكس دفعة</b><i>أُدخل المبلغ خطأ بدلاً من <span class="fig">50,000</span></i></p>
-              <span class="reversal-chip">قيد مقابل</span>
+
+              <p><small class="fig">08/20 · حسن</small><b>تصحيح الدفعة</b><i>أُدخل المبلغ خطأ بدلاً من <span class="fig">50,000</span></i></p>
+
+              <span class="reversal-chip">تصحيح</span>
+
               <em class="fig">+500,000</em>
+
               <strong class="fig">650,000</strong>
+
             </div>
+
           </div>
 
           <div class="correction-result">
-            <span>✓</span>
-            <p><small>بعد التصحيح</small><b>أُعيدت الدفعة كاملة إلى دَين العميل</b></p>
-            <em class="fig">650,000</em>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
+            <span>✓</span>
+
+            <p><small>بعد التصحيح</small><b>تمت إعادة المبلغ إلى حساب العميل</b></p>
+
+            <em class="fig">650,000</em>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
 <!-- ══ SCREEN: STOCK + REPORTS ══ -->
+
 <section class="screen">
+
   <div class="wrap">
 
     <div class="moment rise shortage-feature">
+
       <div class="shortage-copy">
+
         <span class="label">نواقص المخزن</span>
-        <h2>يعرف ما يحتاج طلباً، ثم ينهي النقص من البطاقة نفسها.</h2>
-        <!-- Bayan, from stLowStockItem: T = p·Par where demand exists, else the merchant's own
-             typed minimum M; Par itself accounts for lead time and demand variability. The first
-             draft said only "measured on how fast it sells" — true but vaguer than the mechanism,
-             and the mechanism is the part that survives "how do you know?". -->
-        <p class="say">يربط مخزن حركة الصنف بمدة وصول التوريد ليحدد مستوى آمناً يناسبه. افتح المادة الناقصة، أدخل الكمية الواصلة، وراجع الرصيد الجديد قبل التأكيد — من دون أن تنتقل إلى شاشة أخرى.</p>
+
+        <h2>اعرف ما يجب طلبه قبل أن ينفد.</h2>
+
+        <p class="say">يتابع مخزن حركة كل مادة ومدة وصول التوريد ليحدد الكمية التي يجب أن تبقى متوفرة. وعند وصول البضاعة، أدخل الكمية مباشرة من بطاقة النقص وشاهد الرصيد الجديد قبل الحفظ.</p>
+
         <div class="shortage-promise">
+
           <span aria-hidden="true">✓</span>
-          <p><b>النقص لا يختفي قبل أن يُسد.</b> إذا أضفت كمية جزئية وبقي الرصيد دون المستوى الآمن، تبقى المادة أمامك حتى تكملها.</p>
+
+          <p><b>لن تختفي المادة من قائمة النواقص قبل اكتمالها.</b> إذا أضفت جزءاً من الكمية المطلوبة وبقي الرصيد منخفضاً، تظل المادة ظاهرة حتى يتم سد النقص.</p>
+
         </div>
+
       </div>
+
       <div class="art shortage-art" aria-hidden="true">
+
         <div class="shortage-isolation">
+
           <div class="shortage-alert">
+
             <span class="shortage-icon">!</span>
-            <div><small>تنبيه يحتاج إجراء</small><b>صبغ أبيض 20 لتر</b></div>
+
+            <div><small>يحتاج إلى طلب</small><b>صبغ أبيض 20 لتر</b></div>
+
             <span class="stockout-pill">ينفد خلال يومين</span>
+
           </div>
 
           <div class="shortage-basis">
+
             <div><small>المتوفر الآن</small><b class="fig danger-figure">3</b><span>سطل</span></div>
+
             <div class="stock-bridge">
+
               <span><i style="--stock-fill:18%"></i></span>
-              <small>المستوى الآمن <b class="fig">16</b></small>
+
+              <small>المستوى المطلوب <b class="fig">16</b></small>
+
             </div>
+
             <div class="basis-reasons">
-              <span><small>حركة البيع</small><b class="fig">8 / أسبوع</b></span>
+
+              <span><small>معدل البيع</small><b class="fig">8 / أسبوع</b></span>
+
               <span><small>مدة التوريد</small><b class="fig">5 أيام</b></span>
+
             </div>
+
           </div>
 
           <div class="shortage-review">
-            <div class="shortage-review-head"><span><b>+</b> تسجيل الكمية الواصلة</span><small>مراجعة قبل الحفظ</small></div>
+
+            <div class="shortage-review-head"><span><b>+</b> إضافة الكمية الواصلة</span><small>مراجعة قبل الحفظ</small></div>
+
             <div class="stock-equation">
-              <div><small>الحالي</small><b class="fig">3</b></div>
+
+              <div><small>الرصيد الحالي</small><b class="fig">3</b></div>
+
               <span>+</span>
-              <div class="incoming-stock"><small>الكمية الداخلة</small><b class="fig">14</b></div>
+
+              <div class="incoming-stock"><small>الكمية الواصلة</small><b class="fig">14</b></div>
+
               <span>=</span>
-              <div class="new-stock"><small>بعد الإضافة</small><b class="fig">17</b></div>
+
+              <div class="new-stock"><small>الرصيد الجديد</small><b class="fig">17</b></div>
+
             </div>
-            <div class="shortage-result"><span>✓</span> يتجاوز المستوى الآمن بوحدة واحدة، وسيخرج من قائمة النواقص.</div>
+
+            <div class="shortage-result"><span>✓</span> تم تجاوز المستوى المطلوب، وستخرج المادة من قائمة النواقص.</div>
+
             <div class="shortage-actions"><span>تعديل</span><span class="shortage-confirm">تأكيد الإضافة</span></div>
+
           </div>
 
           <div class="shortage-done">
+
             <span>✓</span>
-            <p><b>بعد التأكيد</b><small>يُسجل التوريد ويصبح الرصيد 17 سطلاً.</small></p>
-            <em>اكتمل النقص</em>
+
+            <p><b>تم تحديث المخزون</b><small>أصبح الرصيد 17 سطلاً.</small></p>
+
+            <em>تم سد النقص</em>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
     <div class="moment flip rise">
+
       <div>
+
         <span class="label">التقارير</span>
-        <h2>تعرف ما يتحرك، وما يرجع، وما بقي نائماً على الرف.</h2>
+
+        <h2>اعرف ماذا بعت، وماذا نقص، وما الذي لم يتحرك.</h2>
+
         <!-- Bayan: "الربح بعد الخصم" was cut, not softened. Reports has no profit query and no
+
              cost price in its Application layer at all — the same wall Basir stopped at rather
+
              than inventing a number. Replaced with the eight queries that DO exist:
+
              SalesSummary, Returns, TopSelling, DeadStock, StockValue, Debtors, CustomerStatement.
+
              Dead stock is the strongest of them and nobody had marketed it yet. -->
-        <p class="say">المبيعات والراجع، أكثر المواد طلباً، قيمة المخزون، البضاعة الراكدة، والمدينون وكشوفهم — كلها تُبنى من نفس العمل اليومي الذي سجّله الكاشير، من دون إعادة كتابة الأرقام في مكان آخر.</p>
+
+        <p class="say">تابع المبيعات والراجع، أكثر المواد مبيعاً، قيمة المخزون، المواد الراكدة، العملاء المدينين وكشوف حساباتهم. جميع هذه التقارير تُجهّز من البيانات المسجلة في مخزن من دون إعادة إدخالها أو جمعها يدوياً.</p>
+
       </div>
+
       <div class="art" aria-hidden="true">
+
         <div class="tilt">
+
           <div class="win">
+
             <div class="win-top"><span class="dot"></span><span class="dot"></span><span class="dot"></span><span class="who"><span>التقارير</span><span class="av"></span></span></div>
+
             <div class="win-body">
+
               <div class="rail"><b>بيع</b><b>مخزن</b><b>ديون</b><b>راجع</b><b class="on">تقارير</b></div>
+
               <div class="canvas">
+
                 <div class="kpis">
-                  <div class="kpi"><b class="fig" data-count="2450000">0</b><span>بيع الشهر</span></div>
-                  <div class="kpi"><b class="fig" data-count="18">0</b><span>مدين</span></div>
-                  <div class="kpi"><b class="fig" data-count="7">0</b><span>ناقص</span></div>
+
+                  <div class="kpi"><b class="fig" data-count="2450000">0</b><span>مبيعات الشهر</span></div>
+
+                  <div class="kpi"><b class="fig" data-count="18">0</b><span>عميل مدين</span></div>
+
+                  <div class="kpi"><b class="fig" data-count="7">0</b><span>مواد ناقصة</span></div>
+
                 </div>
+
                 <div class="card reports-card">
+
                   <div class="bars">
+
                     <div data-h="42"></div><div data-h="58"></div><div data-h="35"></div>
+
                     <div data-h="71"></div><div data-h="64"></div><div data-h="88"></div>
+
                   </div>
+
                   <div class="axis"><span>آذار</span><span>نيسان</span><span>أيار</span><span>حزيران</span><span>تموز</span><span>آب</span></div>
+
                 </div>
+
               </div>
+
             </div>
+
           </div>
+
         </div>
+
       </div>
+
     </div>
 
   </div>
+
 </section>
 
 <!-- ══ THE WHOLE SHOP, CONNECTED ══ -->
+
 <section class="paper synthesis" id="المزايا">
+
   <div class="narrow">
-    <span class="eyebrow">من أول البيعة إلى آخر الكشف</span>
+
+    <span class="eyebrow">من البيع إلى التقارير</span>
+
     <div class="synthesis-heading rise">
-      <h2>شغل المحل مترابط، لا مجموعة شاشات منفصلة.</h2>
-      <p>كل عملية تُكمل ما بعدها: لا تنقل الرقم من دفتر إلى شاشة، ولا تعيد إدخاله حتى يظهر في الحساب أو التقرير.</p>
+
+      <h2>كل عملية في مخزن تُحدّث ما يرتبط بها تلقائياً.</h2>
+
+      <p>تسجّل العملية مرة واحدة، ويتولى مخزن تحديث المخزون وحساب العميل والإيصالات والتقارير من دون إعادة إدخال البيانات.</p>
+
     </div>
 
     <div class="synthesis-grid">
+
       <article class="synthesis-card rise">
-        <span class="synthesis-label">البيع يحرّك الباقي</span>
+
+        <span class="synthesis-label">البيع يحدّث كل ما بعده</span>
+
         <ul>
+
           <li>البيع ينقص المخزون ويجهّز الإيصال.</li>
-          <li>البيع الآجل يضيف الدَين إلى كشف العميل.</li>
-          <li>الراجع يعيد الكمية ويسجّل أثره في الحساب.</li>
+
+          <li>البيع الآجل يضيف المبلغ إلى حساب العميل.</li>
+
+          <li>الراجع يعيد الكمية ويحدّث حساب العميل.</li>
+
         </ul>
+
       </article>
+
       <article class="synthesis-card quick-add-card rise">
-        <span class="synthesis-label">المحل لا ينتظر الإعداد</span>
-        <h3>صنف غير مسجّل؟ أضفه وأكمل البيع.</h3>
-        <p>من شاشة البيع نفسها تدخل اسم الصنف وسعره ووحدته، فيدخل الوصل ويبقى ضمن دليل المواد؛ لا توقف الزبون لتذهب إلى شاشة أخرى.</p>
+
+        <span class="synthesis-label">إضافة سريعة للمواد</span>
+
+        <h3>مادة غير مسجّلة؟ أضفها وأكمل البيع.</h3>
+
+        <p>أدخل اسم المادة وسعرها ووحدتها من شاشة البيع نفسها، ثم أكمل الفاتورة مباشرة. تُحفظ المادة في المخزون لتصبح جاهزة للاستخدام في المرات التالية.</p>
+
       </article>
-    </div>
-  </div>
-</section>
 
+    </div>
+
+  </div>
+
+</section>
 <!-- ══ FAQ ══ -->
+
 <section class="paper faq" id="الأسئلة">
+
   <div class="narrow">
-    <span class="eyebrow">قبل التركيب</span>
-    <h2 class="section-title">ما يهمك قبل أن تبدأ.</h2>
+
+    <span class="eyebrow">قبل أن تبدأ</span>
+
+    <h2 class="section-title">إجابات مباشرة عن أكثر الأسئلة شيوعاً.</h2>
+
     <div class="faq-list">
+
       <details class="rise">
-        <summary>هل يتوقف المحل إذا انقطع الإنترنت؟</summary>
-        <p>لا. البيع والمخزون والديون والراجع تعمل على حاسبة المحل. إدخال فاتورة المورّد من صورة يستخدم القراءة الأدق عند توفر الاتصال، وينتقل إلى قارئ محلي إذا انقطع.</p>
+
+        <summary>هل يتوقف العمل إذا انقطع الإنترنت؟</summary>
+
+        <p>لا. البيع والمخزون والديون والراجع والإيصالات تعمل على حاسبات الشركة نفسها. بعض الميزات التي تعتمد على خدمات خارجية، مثل القراءة المتقدمة لفواتير المورّد، تستخدم بديلاً محلياً عند انقطاع الاتصال.</p>
+
       </details>
+
       <details class="rise">
+
         <summary>هل يدعم البيع النقدي والآجل؟</summary>
-        <p>نعم. النقدي يبقى سريعاً، وفي الآجل تختار العميل وترى رصيده وحدّه قبل الحفظ، ثم تظهر البيعة مباشرة في كشفه.</p>
+
+        <p>نعم. يمكنك تسجيل البيع النقدي مباشرة، أو اختيار العميل في البيع الآجل ومراجعة رصيده وحد الدين قبل الحفظ. وبعد تسجيل البيعة تظهر تلقائياً في كشف حسابه.</p>
+
       </details>
+
       <details class="rise">
+
+        <summary>هل يمكن استخدام مخزن في أكثر من فرع؟</summary>
+
+        <p>نعم. يمكن تنظيم الشركة وفروعها ومستخدميها داخل مخزن، مع تحديد ما يستطيع كل مستخدم الوصول إليه بحسب دوره وصلاحياته.</p>
+
+      </details>
+
+      <details class="rise">
+
+        <summary>هل يمكن تحديد صلاحيات مختلفة للموظفين؟</summary>
+
+        <p>نعم. يمكن إعطاء الكاشير صلاحيات العمل اليومي، مع إبقاء العمليات الإدارية والحساسة للمدير أو للمستخدمين المخولين بها.</p>
+
+      </details>
+
+      <details class="rise">
+
         <summary>ماذا يحدث إذا سُجّلت دفعة بالخطأ؟</summary>
-        <p>تُعكس الدفعة مع سبب واضح، ويعود مبلغها إلى الدَين من دون حذف الحركة الأصلية؛ فيبقى كشف العميل صحيحاً ومفهوماً.</p>
+
+        <p>يمكن تصحيح الدفعة مع تسجيل سبب التصحيح واسم من نفّذه. يُعاد المبلغ إلى حساب العميل، وتبقى العملية الأصلية والتصحيح ظاهرين في كشفه.</p>
+
+      </details>
+
+      <details class="rise">
+
+        <summary>هل يمكن استخراج كشوف حساب للعملاء؟</summary>
+
+        <p>نعم. يمكنك عرض وطباعة كشف حساب لعميل واحد، أو تجهيز كشوف جميع العملاء المدينين دفعة واحدة، مع تفاصيل البيع والدفعات والراجع والتعديلات.</p>
+
+      </details>
+
+      <details class="rise">
+
+        <summary>هل ينبهني مخزن عند انخفاض المواد؟</summary>
+
+        <p>نعم. يتابع مخزن حركة المواد ومستويات المخزون، ويعرض المواد التي تحتاج إلى طلب أو متابعة قبل نفادها.</p>
+
+      </details>
+
+      <details class="rise">
+
+        <summary>هل بيانات الشركة تبقى لدي؟</summary>
+
+        <p>مخزن مصمم ليعمل على حاسبات الشركة نفسها، ولا يجعل استمرار العمل اليومي معتمداً على اتصال دائم بالإنترنت أو على خدمة خارجية.</p>
+
       </details>
       <details class="rise">
+
         <summary>كيف أبدأ باستخدام مخزن؟</summary>
-        <p>تواصل معنا، فنهيّئ مخزن على طريقة عمل محلّك ونثبّته على حاسبتك، ثم تبدأ بموادك وحساباتك أنت.</p>
+
+        <p>تواصل معنا، فنجهز النظام وفق طريقة عمل شركتك، ونثبته على الحاسبات المطلوبة، ثم نساعدك على بدء العمل ببياناتك الفعلية.</p>
+
       </details>
+
     </div>
-  </div>
-</section>
 
+  </div>
+
+</section>
 <!-- ══ CLOSE ══ -->
-<section class="paper close" id="تواصل">
-  <div class="narrow">
-    <span class="eyebrow">الطلب</span>
-    <h2>خلّ شغل المحل كله في مكان واحد.</h2>
-    <p>راسلنا لتركيب مخزن على حاسبة محلّك وتهيئته على طريقة بيعك وموادك.</p>
-    <!-- PENDING: same Telegram handle as the header button. -->
-    <span class="cta is-disabled" aria-disabled="true">اطلب مخزن</span>
-    <p class="honest">التركيب والتهيئة يتمّان بالتواصل المباشر.</p>
-  </div>
-</section>
 
+<section class="paper close" id="تواصل">
+
+  <div class="narrow contact-panel">
+
+    <span class="eyebrow">تواصل معنا</span>
+
+    <h2>هل تريد معرفة إن كان مخزن مناسبًا لشركتك؟</h2>
+
+    <p class="contact-lede">اتصل بنا مباشرة، وسنوضح لك طريقة عمل مخزن، وما إذا كان يناسب شركتك، وكيف يتم تركيبه وتهيئته على حاسباتك.</p>
+
+    <div class="contact-actions" aria-label="خيارات التواصل">
+      <a class="cta" href="tel:+9647859502221" aria-label="اتصل بنا على الرقم 0785 950 2221">اتصل الآن</a>
+      <a class="cta telegram-cta" href="https://t.me/SoldierBoyV1" target="_blank" rel="noopener noreferrer">راسلنا على تلغرام</a>
+    </div>
+
+    <p class="contact-details">
+      <a href="tel:+9647859502221" dir="ltr">0785 950 2221</a>
+      <span aria-hidden="true">·</span>
+      <a href="https://t.me/SoldierBoyV1" target="_blank" rel="noopener noreferrer" dir="ltr">@SoldierBoyV1</a>
+    </p>
+
+    <p class="honest">التركيب والتهيئة يتمّان بالتواصل المباشر.</p>
+
+  </div>
+
+</section>
 </main>
 
 <footer>
@@ -613,7 +1170,7 @@
       <a href="#المزايا">ما ينجزه</a>
       <a href="#تواصل">الطلب</a>
     </nav>
-    <p>بيع · مخزون · ديون · راجع · تقارير — في برنامج واحد للمحل.</p>
+    <p>بيع · مخزون · ديون · راجع · تقارير — في برنامج واحد.</p>
   </div>
 </footer>
 
