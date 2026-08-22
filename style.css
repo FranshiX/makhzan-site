@@ -1,11 +1,4 @@
-/* ═══════════════════════════════════════════════════════════════════════════
-   makhzan-site
 
-   Every colour, radius and shadow below is canon from the app itself
-   (Modular-Monolith → CODEX/09_UI_MAP/DESIGN_SYSTEM.md §A and src/Desktop/App.xaml).
-   Nothing here is invented for the web: the site and the product are one family,
-   not lookalikes. If a token changes in the app, change it here too.
-   ═══════════════════════════════════════════════════════════════════════════ */
 
 @font-face{
   font-family:"IBM Plex Sans Arabic";font-style:normal;font-weight:400;font-display:swap;
